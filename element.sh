@@ -5,7 +5,7 @@ PSQL="psql --username=freecodecamp --dbname=periodic_table -t --no-align -c"
 if [[ -z $1 ]]
   then
   echo Please provide an element as an argument.
-  exit 2
+  exit 0 # error code 0 necessary for fcc task
 fi
 
 GOT_ATOMIC_NUMBER() {
